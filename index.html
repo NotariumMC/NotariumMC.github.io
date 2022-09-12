@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Serveur Minecraft 1.19">
+        <meta name="theme-color" content="#e4e3d7">
+        <meta name="author" content="Sloyni">
+
+        <meta property="og:title" content="Accueil">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://NotariumMC.github.io">
+        <meta property="og:image" content="Notarium.png">
+        <meta property="og:description" content="Serveur Minecraft 1.18">
+        <meta property="og:site_name" content="Notarium">
+        
+        <!-- CSRF Token -->
+        <meta name="csrf-token" content="FT8fV1orj6uOQeMSkPwEcpvVbSZMf0Y4ivrkLpwe">
+
+        <!-- Website Title -->
+        <title>Accueil | Notarium</title>
+
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="Notarium.png">
+
+        <!-- Scripts -->
+        <script src="asset//aos@2.3.1/dist/aos.js" defer></script>
+        <script src="asset//npm/@splidejs/splide@latest/dist/js/splide.min.js" defer></script>
+        <script src="asset//ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+        <script src="asset//assets/vendor/bootstrap/js/bootstrap.bundle.min.js" defer></script>
+        <script src="asset//assets/vendor/axios/axios.min.js" defer></script>
+        <script src="asset//particles.js/2.0.0/particles.min.js" defer></script>
+        <script src="asset//assets/js/script.js" defer></script>
+
+        <!-- Page level scripts -->
+        <script src="asset//assets/themes/revolution/js/components.js" defer></script>
+        <script src="asset//assets/themes/revolution/js/script.js" defer></script>
+        <script src="asset//assets/themes/revolution/js/fixedNavbar.js" defer></script>
+        
+        <!-- Fonts -->
+
+        <<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+        <link href="https://fonts.bunny.net/css2?family=Aldrich:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300&display=swap" rel="stylesheet">
+
+        <!-- Styles -->
+        <link rel="stylesheet" href="asset//npm/@splidejs/splide@latest/dist/css/splide.min.css">
+        <link href="asset//aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link href="asset//assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="asset//assets/themes/revolution/css/components.css">
+        <link rel="stylesheet" href="asset//assets/themes/revolution/css/animations.css">
+        <link rel="stylesheet" href="asset//assets/themes/revolution/css/style.css">
+                <style>
+            :root {
+                --theme-font-family: 'Aldrich', sans-serif;
+                --theme-body-color: #ffffff;
+                --theme-body-background: #2d323b;
+
+                --theme-navbar-background: #21252B;
+
+                --theme-button-color:#636363;
+                --theme-button-background:#e4e3d7;
+
+                --theme-button-second-color:#000000;
+                --theme-button-second-background:#ffffff;
+                --theme-button-second-background-2:#dfdfdf;
+
+                --theme-dropdown-background: #424955;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="navbarContainer" class="style-1">
+        <div class="navbar-left">
+            <a href="https://NotariumMC.github.io/javascript:void(0)" id="navbarMobileOpen" class="text-white mr-3">
+                <i class="bi-list"></i>
+            </a>
+            <a href="https://NotariumMC.github.io">
+                <img class="navbar-logo" src="Notarium.png" alt="">
+            </a>
+                                                <a class="navbar-item  active"
+                        href="https://NotariumMC.github.io"
+                        >
+                        Accueil
+                    </a>
+                    
+                                                                <a class="navbar-item"
+                        href="https://NotariumMC.github.io/2/index.html"
+                        >
+                        STAFF
+                    </a>
+            </div>
+        <div class="navbar-right">
+                                            
+
+                                    </div>
+    </div>
+    <div id="navbarMobileContainer">
+        <div class="text-center">
+            <a class="d-block h4 text-white" href="https://NotariumMC.github.io/javascript:void(0)" id="navbarMobileClose">
+                <i class="bi-x-lg"></i>
+            </a>
+        </div>
+        <h3 class="navbar-title">Menu</h3>
+                                    <a class="btn btn-theme-simple mt-2 btn-block  active"
+                    href="https://NotariumMC.github.io"
+                    >
+                    Accueil
+                </a>
+
+                                                <a class="btn btn-theme-simple mt-2 btn-block"
+                    href="https://NotariumMC.github.io/2/index.html"
+                    >
+                    STAFF
+                </a>
+                  
+       
+                    </div>
+                
+                                            <div class="mt-2">
+        <div id="status-message"></div>
+        </div>
+                    <div id="loader">
+            <div class="text-center">
+                <div>
+                    <img src="Notarium.png" alt="">
+                </div>
+                <div class="lds-dual-ring"></div>
+            </div>
+        </div>
+                <div id="homeHeader" class="style-1"
+    style="position:relative;background: linear-gradient(90deg, rgba(36, 36, 36, 0.685) 0%, rgba(0, 0, 0, 0.322) 100%),url('Arriereplan.jfif') center / cover no-repeat">
+            <div id="particles-js"></div>
+                <div class="header-content">
+            <img src="Notarium.png" alt="" class="header-logo">
+
+                                                                        <p class="header-badge">                         </p>
+                                                            <h1 class="header-title">Bienvenue sur Notarium</h1>
+            <p class="header-description">
+                Serveur minecraft 1.18
+            </p>
+            <div class="header-btns">
+                                                   <a 
+                        data-text=" Play.Notarium.com "
+                        class="ms-3 btn-theme-second header-btn">
+                        Play.Notarium.com
+                    </a>
+                            </div>
+            <div class="header-socials">
+
+                                    <a class="socials-item" target="_blank" href="https://discord.gg/invite/ctMrGQqJCS">
+                        <i class="bi bi-discord"></i>
+                    </a>
+                            </div>
+        </div>
+                    <div class="header-divider">
+            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 2560 145">
+    <polygon fill="#2D323B" points="1272 145 0 145 0 0 181 0 181 91 357 91 357 45 530 45 530 0 716 0 716 45 899 45 899 91 1085 91 1085 0 1204 0 1204 45 1280 45 1356 45 1356 0 1475 0 1475 91 1661 91 1661 45 1844 45 1844 0 2030 0 2030 45 2203 45 2203 91 2379 91 2379 0 2560 0 2560 145 1272 145"/>
+</svg>
+        </div>
+        </div>
+        <div id="homeContent" >
+        <div class="container">
+                                            <div class="card mt-5 mx-3">
+                    <div class="card-body py-2 text-md-auto text-center d-md-flex justify-content-between align-items-center">
+                        <h3 class="mb-0 font-weight-bold"><i class="bi-newspaper"></i> Nouveautés</h3>
+                    </div>
+                </div>
+                <div id="homeNews"  class="header" >
+                                                            <a href="" class="news-active">
+                                                <div class="informations">
+                            <span class="infobadge">Dernière nouveauté</span>
+                            <h3 class="title">Ouverture de la Alpha du serveur !</h3>
+                            <p class="text">
+                                
+                            </p>
+                        </div>
+                    </a>
+                                                                                                    <div class="news-items">
+                                                         
+                                                        <div class="informations">
+                                <h6 class="title"></h3>
+                                <p class="text">
+                                    
+                                </p>
+                            </div>
+                        </a>
+                                                                    </div>
+                </div>
+                                        </div>
+                                            <div  id="homeTD"  class="mt-5  py-4">
+                <div class="container">
+                    <div class="row">
+                                                    <div class="col-md d-flex align-items-center">
+                                <div id="homeDescription" class="container">
+                                    <h3 class="title">
+Mises a jour</h3>
+<br>
+
+<strong>Minimum 1 Mise a jour toutes les semaines.</strong>
+<br>
+<br>
+<strong>Pour suivre les mises a jour je vous invite a rejoindre le discord.</strong>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p><p class="Standard" align="center" style="text-align:center"><span lang="FR">&nbsp;<o:p></o:p></span></p></p>
+                                </div>
+                            </div>
+                                                                            <div class="col-md">
+                                <div id="homeTrailer" class="">
+                                    <iframe width="100%" height="100%" frameborder="0"
+                                        src="https://www.youtube.com/embed/?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0">
+                                    </iframe>
+                                </div>
+                            </div>
+                                            </div>
+                </div>
+            </div>
+                            <div id="homeInfos" class="container mt-5">
+                <div class="row">
+                    <div class="col-md mb-3 mb-md-0 info-item">
+                        <i class="item-icon bi bi-bookmark-star-fill"></i>
+                        <h5 class="item-title mt-4">Staff</h5>
+                        <p class="item-text">
+                            Staff a l'écoute des joueurs et actif
+                        </p>
+                    </div>
+                    <div class="col-md mb-3 mx-md-4 mb-md-0 info-item">
+                        <i class="item-icon bi-info-circle"></i>
+                        <h5 class="item-title mt-4">Infos</h5>
+                        <p class="item-text">
+                            Serveur pvp faction sans mods , uniquement des plugins !
+                        </p>
+                    </div>
+                    <div class="col-md mb-3 mb-md-0 info-item">
+                        <i class="item-icon bi-hdd"></i>
+                        <h5 class="item-title mt-4">Serveur</h5>
+                        <p class="item-text">
+                            Serveur performant et payé par l'équipe du staff
+                        </p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        <div id="footerStats"
+    style="position:relative;  background: linear-gradient(90deg, rgba(36, 36, 36, 0.685) 0%, rgba(0, 0, 0, 0.322) 100%),url('https://NotariumMC.github.io/storage/img/arriereplan.png') center / cover no-repeat">
+            <div id="particles-js-2"></div>
+        
+            <div class="content-top-divider">
+            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 2560 145">
+    <polygon fill="#2D323B" points="1272 145 0 145 0 0 181 0 181 91 357 91 357 45 530 45 530 0 716 0 716 45 899 45 899 91 1085 91 1085 0 1204 0 1204 45 1280 45 1356 45 1356 0 1475 0 1475 91 1661 91 1661 45 1844 45 1844 0 2030 0 2030 45 2203 45 2203 91 2379 91 2379 0 2560 0 2560 145 1272 145"/>
+</svg>
+        </div>
+                        <div class="content">
+ 
+            <div class="content-item">
+                <h1 class="item-title">+0</h1>
+                <p class="item-text">JOUEURS TOTAL</p>
+            </div>
+            <div class="content-item">
+                <h1 class="item-title">+0</h1>
+                <p class="item-text">RECORD DE JOUEURS CONNECTÉS</p>
+            </div>
+        </div>
+        
+            <div class="content-bottom-divider">
+            <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 2560 145">
+    <polygon fill="#2D323B" points="1272 145 0 145 0 0 181 0 181 91 357 91 357 45 530 45 530 0 716 0 716 45 899 45 899 91 1085 91 1085 0 1204 0 1204 45 1280 45 1356 45 1356 0 1475 0 1475 91 1661 91 1661 45 1844 45 1844 0 2030 0 2030 45 2203 45 2203 91 2379 91 2379 0 2560 0 2560 145 1272 145"/>
+</svg>
+        </div>
+            </div>
+<footer>
+    <div id="bigFooter">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1 class="footer-title">Notarium</h1>
+                    <p class="footer-text">
+                        
+                    </p>
+                </div>
+                <div class="col-md-3">
+
+                <div class="col-md-3">
+                    <h5 class="section-title">Réseaux Sociaux</h5>
+                    <div class="socials mt-3">
+
+                                                    <div>
+                                <a class="socials-item" target="_blank" href="https://discord.gg/invite/ctMrGQqJCS">
+                                    <i class="bi-link-45deg"></i>
+                                    Discord
+                                </a>
+                            </div>
+                                            </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<div id="footer">
+    Copyright © 2022 Notarium
+    <br>
+    Propulsé par <a href="https://azuriom.com" target="_blank" rel="noopener noreferrer">Azuriom</a>.</div>
+                <script>
+            function copyIp(el) {
+                var value = ''
+                var tempInput = document.createElement("input");
+                tempInput.style = "position: absolute; left: -1000px; top: -1000px";
+                tempInput.value = value;
+                document.body.appendChild(tempInput);
+                tempInput.select();
+                document.execCommand("copy");
+                document.body.removeChild(tempInput);
+                $(el).children('.after').html('Ip copiée !')
+                setTimeout(function(){
+                    $(el).children('.after').html('<i class="bi-link-45deg"></i> Cliquez pour copier <i class="bi-link-45deg"></i>')
+                },2000)
+            }
+        </script>
+    </body>
+</html>
